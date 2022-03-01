@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillzHQ | Home</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/nunito-font/">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navGroup">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h2>Skillz<strong>HQ</strong></h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg>
+                                <use xlink:href="regular.svg#caret-square-down"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto w-100 justify-content-end mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link navTabs active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTabs" href="about.html" onclick="activeSwitch()">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTabs" href="courses.html" onclick="activeSwitch()">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTabs" href="#jobs" onclick="activeSwitch()">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navTabs" href="#contact" onclick="activeSwitch()">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html">
+                                    <button class="btn my-2 my-sm-0 nav-button log-btn" type="submit">Log In</button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="signup.html">
+                                    <button class="btn my-2 my-sm-0 nav-button" type="submit">Sign Up</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-carousel">
+        <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="banner-slider">
+                        <div class="slides" id="slide1">
+                            <div class="container">
+                                <div class="hero-info" style="color: rgb(255, 255, 255);">
+                                    <h3>Don't think it twice</h3>
+                                    <h1>Creativity is our identity</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Consectetur recusandae, deserunt nam iste esse repudiandae
+                                        est reiciendis.
+                                    </p>
+      
+                                    <div class="hero-btn">
+                                        <a href="#" class="btn-custom">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="carousel-item">
+                    <div class="banner-slider">
+                        <div class="slides" id="slide2">
+                            <div class="container">
+                                <div class="hero-info" style="color: #fff;">
+                                    <h3>Don't think it twice</h3>
+                                    <h1>Creativity is our identity</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Consectetur recusandae, deserunt nam iste esse repudiandae
+                                        est reiciendis mollitia dolore.
+                                    </p>
+      
+                                    <div class="hero-btn">
+                                        <a href="#" class="btn-custom">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="carousel-item active">
+                    <div class="banner-slider">
+                        <div class="slides" id="slide3">
+                            <div class="container" style="color: #fff;">
+                                <div class="hero-info">
+                                    <h3>Believe it or not</h3>
+                                    <h1>With Impact You're Intact</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Consectetur recusandae, deserunt nam iste esse repudiandae
+                                        est reiciendis mollitia dolore.
+                                    </p>
+      
+                                    <div class="hero-btn">
+                                        <a href="#" class="btn-custom">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="sponsors mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="brand-logo">
+                        <img src="pictures/sponsor-logo-1.png" alt="brand-logo-01">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="brand-logo">
+                        <img src="pictures/sponsor-logo-2.png" alt="brand-logo-02">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="brand-logo">
+                        <img src="pictures/sponsor-logo-3.png" alt="brand-logo-03">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="brand-logo">
+                        <img src="pictures/sponsor-logo-4.png" alt="brand-logo-04">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-wrapper" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-img">
+                        <img src="pictures/about-pic.png" alt="" class="img-fluid" width="80%">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 about-title mt-4">
+                    <h2 class="text-uppercase text-left">
+                        <span>Know More</span>
+                        <span>About SkillzHQ</span>
+                    </h2>
+
+                    <p class="paragraph text-left">
+                        The name's John Favour Osaze and I am a Frontend Web Developer. I started this career
+                        about three years ago and I have made some progress and experience in the field.
+                        The name's John Favour Osaze and I am a Frontend Web Developer. I started this career
+                        about three years ago and I have made some progress and experience in the field.
+                    </p>
+
+                    <p class="paragraph text-left">
+                        Ever since I acquired the skill, building a website has (kind of) become an hobby
+                        for me. I am so confident that if you give the job you would never regret the day you
+                        hired me.
+                        Ever since I acquired the skill, building a website has (kind of) become an hobby
+                        for me. I am so confident that if you give the job you would never regret the day you
+                        hired me.
+                    </p>
+
+                    <div class="text-left">
+                        <a href="profile.html">
+                            <button type="button" class="btn button primary-button text-uppercase nav-button"
+                                style="margin-top: 15px">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="courses">
+        <div class="container">
+            <h5 class="heading my-4 text-uppercase text-center section-title">Our Courses</h5>
+            <div class="row grid whole-card">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 card-hvr">
+                 <a href="#">
+                    <div class="card h-100 card-show">
+                        <img src="pictures/card-img-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-head">Web Design</h5>
+                            <p class="card-text-new">This is a longer card with supporting text below as a natural
+                                lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                 </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 card-hvr">
+                    <a href="#">
+                        <div class="card h-100 card-show">
+                            <img src="pictures/card-img-2.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-head">Computer Engineering</h5>
+                                <p class="card-text-new">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 card-hvr">
+                    <a href="#">
+                        <div class="card h-100 card-show">
+                            <img src="pictures/card-img-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-head">App Development</h5>
+                                <p class="card-text-new">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4 card-hvr">
+                    <a href="#">
+                        <div class="card h-100 card-show">
+                            <img src="pictures/card-img-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-head">Digital Marketing</h5>
+                                <p class="card-text-new">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

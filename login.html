@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillzHQ | Login</title>
+    <link rel="stylesheet" href="library/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/nunito-font/">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-image: linear-gradient(90deg, #fc9f40 0%, #f6bf80 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="form-wrapper">
+        <div class="form-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="img-area">
+                            <img src="./pictures/form-img.gif" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="whole-form">
+                            <div class="login-callout">
+                                <div class="row">
+                                    <div class="col-md-6 callout-left">
+                                        <h2>Log In</h2>
+                                        <p>to your account</p>
+                                    </div>
+                                    <div class="col-md-6 callout-right">
+                                        <a class="navbar-brand" href="index.html">
+                                            <h2>Skillz<strong>HQ</strong></h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-area">
+                                <form autocomplete="off">
+                                    <div class="form-group">
+                                        <label for="userName" id="userLabel">Username / Email</label>
+                                        <input type="text" class="form-control" id="userName"
+                                            required>
+                                        <svg id="userSVG">
+                                            <use xlink:href="regular.svg#user"></use>
+                                        </svg>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password" id="pswLabel">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            required>
+                                        <svg id="pswSVG">
+                                            <use xlink:href="regular.svg#eye"></use>
+                                        </svg>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkBox">
+                                                <label class="form-check-label" for="checkBox">Remember me</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <a href="#">
+                                                <small class="ml-4">Forgot Password?</small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="col-lg-12">
+                                    <div class="text-center mt-3">
+                                        <a href="index.html" class="form-btn">
+                                            <button type="submit" class="btn btn-primary">Log In</button>
+                                        </a>
+                                        <p class="text-muted mt-2 other-text">Don't have an account? <a
+                                                href="signup.html">Signup</a></p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var userinput = document.getElementById('userName'),
+            usersvg = document.getElementById('userSVG'),
+            userlabel = document.getElementById('userLabel');
+
+        userinput.addEventListener('focus', function () {
+            usersvg.style.fill = "#fc9e3e";
+            userlabel.style.transform = "translate(0)";
+        });
+
+        var pswinput = document.getElementById('password'),
+            pswsvg = document.getElementById('pswSVG'),
+            pswlabel = document.getElementById('pswLabel');
+
+        pswinput.addEventListener('focus', function () {
+            pswsvg.style.fill = "#fc9e3e";
+            pswlabel.style.transform = "translate(0)";
+        });
+    </script>
+</body>
+
+</html>
